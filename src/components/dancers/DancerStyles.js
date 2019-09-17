@@ -18,7 +18,7 @@ export default dancerStyle = StyleSheet.create({
   content: {
     paddingRight: 40,
     paddingLeft: 8,
-    paddingBottom: 12,
+    paddingBottom: 20,
     width: deviceWidth - 50,
   },
   name: {

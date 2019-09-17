@@ -28,7 +28,7 @@ export default HomeScreenStyle = StyleSheet.create({
     borderBottomWidth: 1
   },
   dancerCom: {
-    marginVertical: 20,
+    marginTop: 20,
   },
   brandConDescription: {
     color: '#e1e3e4',
@@ -37,5 +37,17 @@ export default HomeScreenStyle = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 20,
     paddingHorizontal: 30
+  },
+  footer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  footerText: {
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: '400',
+    textAlign: 'center',
+    paddingBottom: 48
   }
 })

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, TouchableOpacity } from 'react-native'
 import styles from './HomeScreenStyles'
 import Dancer from '../../components/dancers/DancerComponent'
 import VideoComponent from '../../components/video/VideoComponent'
@@ -34,7 +34,20 @@ const HomeScreen = () => {
           name='Hettie Griffin'
           description='In Hettles famous extended mad scene, she cites the ballerinas reading'
         />
+        <Dancer
+          image='https://images.unsplash.com/photo-1564658786419-edcf7895a620'
+          name='Hettie Griffin'
+          description='In Hettles famous extended mad scene, she cites the ballerinas reading'
+        />
+        <Dancer
+          image='https://images.unsplash.com/photo-1564658786419-edcf7895a620'
+          name='Hettie Griffin'
+          description='In Hettles famous extended mad scene, she cites the ballerinas reading'
+        />
       </ScrollView>
+      <TouchableOpacity style={styles.footer}>
+        <Text style={styles.footerText}>Buy Tickets</Text>
+      </TouchableOpacity>
     </View>
   );
 }

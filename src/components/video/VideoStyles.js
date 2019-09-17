@@ -5,7 +5,7 @@ import Colors from '../../../constants/Colors'
 export default VideoStyles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    flex: 1
+    flex: 15,
   },
     mediaPlayer: {
     position: 'absolute',
