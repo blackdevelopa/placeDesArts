@@ -1,11 +1,12 @@
 import React from 'react';
-import { View, YellowBox } from 'react-native';
+import { View, StatusBar, YellowBox } from 'react-native';
 import styles from './AppStyle'
 import AppNavigator from './src/AppNavigator';
 
 const App = () => {
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="dark-content" hidden={true} />
       <AppNavigator />
     </View>
   );

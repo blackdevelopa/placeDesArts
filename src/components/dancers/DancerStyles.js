@@ -1,23 +1,35 @@
 import React from 'react'
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native'
 import Colors from '../../../constants/Colors'
+
+let deviceWidth = Dimensions.get('window').width
 
 export default dancerStyle = StyleSheet.create({
   container: {
-    backgroundColor: Colors.white,
-    width: 100,
     display: 'flex',
     flexDirection: 'row'
   },
   imageCon: {
-    height: 50,
-    width: 50,
-    borderRadius: 15
+    height: 40,
+    width: 40,
+    borderRadius: 20,
+    marginHorizontal: 10
+  },
+  content: {
+    paddingRight: 40,
+    paddingLeft: 8,
+    paddingBottom: 12,
+    width: deviceWidth - 50,
   },
   name: {
-    fontSize: 15
+    fontSize: 14,
+    fontWeight: '500',
+    color: Colors.white,
+    paddingBottom: 5,
   },
   description: {
-    fontSize: 10
+    fontSize: 11,
+    color: 'grey',
+    letterSpacing: 1
   }
 })

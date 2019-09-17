@@ -1,19 +1,46 @@
 import React from 'react'
-import { View, Text, StatusBar } from 'react-native'
-import HomeScreenStyle from './HomeScreenStyles'
-import Dancer from '../../components/dancers/Dancer'
+import { View, Text, ScrollView } from 'react-native'
+import styles from './HomeScreenStyles'
+import Dancer from '../../components/dancers/DancerComponent'
 import VideoComponent from '../../components/video/VideoComponent'
 
 const HomeScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <VideoComponent />
-      <Text style={HomeScreenStyle.text}>Home Screen Top</Text>
-      <StatusBar barStyle="dark-content" />
-      <Text style={HomeScreenStyle.text}>Home Screen</Text>
-      <Dancer name='mike'/>
+      <View style={styles.brandCon}>
+        <View style={styles.tabNav}>
+          <Text style={styles.tabNavText}>Show Details</Text>
+          <Text style={styles.tabNavTextActive}>Our Dancers</Text>
+          <View style={styles.lines} />
+        </View>
+        <Text style={styles.brandConDescription}>
+          What audiences connect with is the human element in the stoty: love and betrayal in love, is a common, enduring theme.
+        </Text>
+      </View>
+      <ScrollView style={styles.dancerCom}>
+        <Dancer
+          image='https://images.unsplash.com/photo-1564658786419-edcf7895a620'
+          name='Hettie Griffin'
+          description='In Hettles famous extended mad scene, she cites the ballerinas reading'
+        />
+        <Dancer
+          image='https://images.unsplash.com/photo-1564658786419-edcf7895a620'
+          name='Hettie Griffin'
+          description='In Hettles famous extended mad scene, she cites the ballerinas reading'
+        />
+        <Dancer
+          image='https://images.unsplash.com/photo-1564658786419-edcf7895a620'
+          name='Hettie Griffin'
+          description='In Hettles famous extended mad scene, she cites the ballerinas reading'
+        />
+      </ScrollView>
     </View>
   );
 }
+
+HomeScreen.navigationOptions = {
+  header: null
+};
 
 export default HomeScreen;

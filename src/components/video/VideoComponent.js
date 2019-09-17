@@ -14,7 +14,7 @@ class VideoComponent extends Component {
       isLoading: true,
       paused: false,
       playerState: PLAYER_STATES.PLAYING,
-      screenType: 'content'
+      screenType: 'cover'
     };
   }
 
@@ -81,7 +81,7 @@ class VideoComponent extends Component {
           ref={videoPlayer => (this.videoPlayer = videoPlayer)}
           resizeMode={this.state.screenType}
           onFullScreen={this.state.isFullScreen}
-          source={{ uri: 'https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4' }}
+          source={{ uri: 'https://random123random124.s3.eu-central-1.amazonaws.com/Ballerina%20Short%20Clip.mp4' }}
           style={VideoStyles.mediaPlayer}
           volume={2}
         />

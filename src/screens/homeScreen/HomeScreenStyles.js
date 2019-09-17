@@ -7,7 +7,35 @@ export default HomeScreenStyle = StyleSheet.create({
     backgroundColor: Colors.black,
     flex: 1
   },
-  text: {
-    color: '#fff'
+  tabNav: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    paddingVertical: 25,
+  },
+  tabNavText: {
+    color: 'grey',
+    textTransform: 'uppercase',
+    fontWeight: '500'
+  },
+  tabNavTextActive: {
+    color: Colors.white,
+    textTransform: 'uppercase',
+    fontWeight: '500'
+  },
+  lines: {
+    borderBottomColor: 'white',
+    borderBottomWidth: 1
+  },
+  dancerCom: {
+    marginVertical: 20,
+  },
+  brandConDescription: {
+    color: '#e1e3e4',
+    fontWeight: '100',
+    textAlign: 'left',
+    paddingTop: 20,
+    paddingBottom: 20,
+    paddingHorizontal: 30
   }
 })
